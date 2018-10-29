@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white_1000"
+    tools:context="com.braga.steliobraga.MaisVida.activities.AnuncioActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins_light"
+                android:paddingEnd="26dp"
+                android:paddingStart="26dp"
+                android:text="Anunciar"
+                android:textAlignment="center"
+                android:textColor="@color/md_red_A700"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="-10dp"
+                android:paddingEnd="26dp"
+                android:paddingStart="27dp"
+                android:text="DOAR SANGUE"
+                android:textAlignment="center"
+                android:textColor="@color/md_grey_900"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <!-- FORM BELLOW -->
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_goback"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingEnd="24dp"
+                android:text="Voltar"
+                android:textColor="@color/md_red_A700"
+                android:textStyle="bold"
+                app:backgroundTint="@color/md_white_1000"
+                app:cornerRadius="18dp"
+                app:icon="@drawable/ic_keyboard_arrow_left_24dp"
+                app:iconTint="@color/md_red_A700"
+                app:rippleColor="@color/md_grey_100"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="18dp"
+                android:paddingEnd="26dp"
+                android:paddingStart="26dp">
+
+
+                <TextView
+                    android:id="@+id/tv_quantidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Selecione a quantidade de sangue:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="12sp" />
+
+                <SeekBar
+                    android:id="@+id/quantidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:progress="10"
+                    android:progressTint="@color/md_red_900" />
+
+
+                <!--<com.farbod.labelledspinner.LabelledSpinner-->
+                <!--android:id="@+id/your_labelled_spinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="96dp"-->
+                <!--app:entries="@array/array_litrosdesangue"-->
+                <!--app:labelText="Quantidade máxima de sangue:"-->
+                <!--app:widgetColor="@color/md_grey_700" />-->
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Breve descrição (opcional)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="12sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_descricao"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="250">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_anunciar"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="6dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="10dp"
+                android:text="Anunciar"
+                android:textStyle="bold"
+                app:backgroundTint="@color/md_red_A700"
+                app:cornerRadius="8dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

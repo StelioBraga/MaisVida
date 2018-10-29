@@ -1,0 +1,23 @@
+<resources>
+    <!-- perfil do doador -->
+    <string name="app_name">MaisVida</string>
+    <string name="info">Informe os seus dados</string>
+    <string name="quantidade_sangue">Quantidade de sangue em Litro</string>
+    <string name="tipo_sangue">Tipo de Sangue :</string>
+    <string name="comentario">Comentário</string>
+    <string name="data">Data para Doação</string>
+    <string name="name">Nome</string>
+    <string name="degitenome">Digite o seu name</string>
+    <string name="provincia">Localização :</string>
+    <string name="unidade">Unidade Mais Proxima</string>
+    <string name="escrever_comentario">Comente a sua Doação</string>
+    <string name="hospitalproximo">Unidade M.Proxima :</string>
+    <string name="tiposangue">Tipo  de Sangue</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editar">Editar</string>
+    <string name="imagem_perfil">IMAGEM PERFIL</string>
+</resources>
+

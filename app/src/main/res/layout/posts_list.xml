@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.github.ivbaranov.mli.MaterialLetterIcon
+            android:id="@+id/mli_tipoSangue"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            app:mli_letter_color="@color/md_white_1000"
+            app:mli_letter_size="22"
+            app:mli_letters_number="3"
+            app:mli_shape_color="@color/md_red_900" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Camilla Cabello"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/09/2018"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.chip.Chip
+                    android:id="@+id/tv_estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:elevation="0dp"
+                    android:text="REQUISITANTE"
+                    android:textColor="@color/md_white_1000"
+                    app:chipBackgroundColor="@color/md_deep_orange_A200" />
+
+                <TextView
+                    android:id="@+id/tv_provincia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:text="Maputo Provincia"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

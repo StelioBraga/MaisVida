@@ -1,0 +1,168 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braga.steliobraga.MaisVida.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.card.MaterialCardView
+            android:id="@+id/cartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/Padrao"
+            app:contentPadding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Stélio Braga"
+                            android:textColor="@color/md_white_1000"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Doador"
+                            android:textColor="@color/md_white_1000" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:src="@drawable/ic_user" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Editar" />
+
+            </LinearLayout>
+        </android.support.design.card.MaterialCardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cartao">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="30dp"
+                android:background="@color/md_white_1000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informação Pessoal"
+                    android:textSize="14sp"
+                    android:textStyle="italic"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-O"
+                    android:drawableLeft="@drawable/ic_blood"
+                    android:drawablePadding="42dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:drawableLeft="@drawable/ic_genero"
+                    android:drawablePadding="42dp"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"/>
+
+                <View
+                    android:id="@+id/divier"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inhambane"
+                    android:drawableLeft="@drawable/ic_localizacao"
+                    android:drawablePadding="42dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hospital de Inhambane"
+                    android:drawableLeft="@drawable/ic_hospital"
+                    android:drawablePadding="42dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contacto"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"/>
+
+                <View
+                    android:id="@+id/divie"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="840379195"
+                    android:drawableLeft="@drawable/ic_celular"
+                    android:drawablePadding="42dp"
+                    android:layout_marginTop="10dp"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

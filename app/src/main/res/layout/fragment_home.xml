@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.braga.steliobraga.MaisVida.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleMarginStart="24dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imageView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerVertical="true" />-->
+
+                <!--android:layout_toRightOf="@+id/imageView"-->
+
+              <!--  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="102dp"
+                    android:text="+Vida"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="24sp"
+                    android:textStyle="bold" /> -->
+
+
+
+
+                <android.support.design.button.MaterialButton
+                    android:id="@+id/btn_anuncio"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:text="Anunciar"
+                    app:icon="@drawable/ic_add_circle_24dp"
+                    android:textStyle="bold"
+                    app:strokeColor="@color/md_white_1000"
+                    app:rippleColor="@color/md_red_900"
+                    app:strokeWidth="2dp"
+                    app:cornerRadius="18dp"
+                    app:backgroundTint="@color/md_red_A700" />
+
+                <SearchView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="true" />
+
+
+                <!--<mehdi.sakout.fancybuttons.FancyButton
+                    android:id="@+id/btn_anunciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="6dp"
+                    android:paddingEnd="14dp"
+                    android:paddingStart="3dp"
+                    android:paddingTop="6dp"
+                    app:fb_defaultColor="@color/md_grey_50"
+                    app:fb_focusColor="@color/md_grey_100"
+                    app:fb_iconResource=""
+                    app:fb_radius="64dp"
+                    app:fb_text="ANUNCIAR"
+                    app:fb_textColor="@color/md_red_A700"
+                    app:fb_textGravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/toolbar"
+            tools:listitem="@layout/posts_list" />
+    </RelativeLayout>
+
+
+</FrameLayout>

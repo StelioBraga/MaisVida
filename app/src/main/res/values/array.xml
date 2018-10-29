@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_tipoSangue">
+        <item>…</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="array_provincias">
+        <item>…</item>
+        <item>Cabo Delgado</item>
+        <item>Niassa</item>
+        <item>Tete</item>
+        <item>Nampula</item>
+        <item>Zambézia</item>
+        <item>Sofala</item>
+        <item>Manica</item>
+        <item>Gaza</item>
+        <item>Inhambane</item>
+        <item>Maputo</item>
+    </string-array>
+
+    <string-array name="array_pesos">
+        <item>…</item>
+        <item>menos que 50 Kg </item>
+        <item>mais que 50 Kg </item>
+    </string-array>
+
+    <string-array name="array_unidadesproximas">
+        <item>…</item>
+        <item>Hosp. Prov. de Inhambane</item>
+        <item>Hosp. Prov. de Gaza</item>
+        <item>Hosp. Prov. de Maputo</item>
+    </string-array>
+
+
+    <string-array name="array_litrosdesangue">
+        <item>…</item>
+        <item>500 ml </item>
+        <item>100 ml</item>
+    </string-array>
+
+</resources>
