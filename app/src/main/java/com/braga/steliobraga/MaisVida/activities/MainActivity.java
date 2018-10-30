@@ -1,6 +1,7 @@
 package com.braga.steliobraga.MaisVida.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.button.MaterialButton;
 import android.support.design.widget.BottomNavigationView;
@@ -53,8 +54,14 @@ public class MainActivity extends AppCompatActivity {
         btn_anuncio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), AnuncioActivity.class));
+
 
             }
+
+
+
+
         });
 
 

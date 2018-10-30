@@ -81,7 +81,7 @@ public class AnuncioActivity extends AppCompatActivity {
                String descricao = til_descricao.getEditText().getText().toString();
               //  String quantidadedesag = quantidade.getProgress().().toString();
 
-                DatabaseReference nomeDeNickiMinaj = rootRef.child("2").child("fo");
+                DatabaseReference nomeDeNickiMinaj = rootRef.child("2f").child("fo");
 
                 ValueEventListener postListener = new ValueEventListener() {
                     @Override
