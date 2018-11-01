@@ -1,13 +1,18 @@
 package com.braga.steliobraga.MaisVida.activities;
 
+import android.app.SearchManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.button.MaterialButton;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -32,6 +37,47 @@ public class MainActivity extends AppCompatActivity {
 
 
     final Context ctx = this;
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        //   return super.onCreateOptionsMenu(menu);
+//        getMenuInflater().inflate(R.menu.search_navegation, menu);
+//        MenuItem searchItem = menu.findItem(R.id.pesquisar);
+//        SearchView searchView = (SearchView)
+//                MenuItemCompat.getActionView(searchItem);
+//        searchView.setOnQueryTextListener(
+//                new SearchView.OnQueryTextListener() {
+//                    @Override
+//                    public boolean onQueryTextSubmit(String newText) {
+//                        return false;
+//                    }
+//
+//                    @Override
+//                    public boolean onQueryTextChange(String query) {
+//
+//                    }
+//                });
+//        SearchManager searchManager = (searchManager)
+//                getSystemService(Context.SEARCH_SERVICE);
+//        ComponentName componentName = new ComponentName(Context.SEARCH_SERVICE.class);
+//        searchView.setSearchableInfo(
+//                searchView.get
+//        );
+//    }
+//
+//}
+//
+//
+//    private void handleIntent(Intent intent) {
+//        if (Intent.pesquisar.equals(
+//                intent.getAction())){
+//            String query = intent.getStringExtra(
+//                    searchManager.QUERY);
+//            doMysearch(query);
+//
+//        }
+//    }
+//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
     }
 
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.SearchView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -40,6 +41,8 @@ public class AnuncioActivity extends AppCompatActivity {
     MaterialButton btn_anunciar;
     MaterialButton btn_goback;
     MaterialButton btn_anuncio;
+
+
 
 
     // Firebase:
