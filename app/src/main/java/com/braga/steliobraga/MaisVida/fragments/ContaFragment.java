@@ -13,6 +13,7 @@ import com.braga.steliobraga.MaisVida.R;
 public class ContaFragment extends Fragment {
 
 
+
         public ContaFragment() {
                 // Required empty public constructor
         }
@@ -24,4 +25,5 @@ public class ContaFragment extends Fragment {
                 // Inflate the layout for this fragment
                 return inflater.inflate(R.layout.fragment_conta, container, false);
         }
+
 }

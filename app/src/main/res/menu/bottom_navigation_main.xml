@@ -19,6 +19,12 @@
         android:enabled="true"
         android:icon="@drawable/ic_avatar"
         android:title="Meu Perfil" />
+    <item
+        android:id="@+id/Estados_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_avatar"
+        android:title="Meu Estado" />
+
 
 
 </menu>

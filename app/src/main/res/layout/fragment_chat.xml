@@ -10,5 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Chat Fragment is this!!" />
+    <Button
+        android:id="@+id/entar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="entar"
+        android:background="@color/md_red_50"/>
 
 </FrameLayout>

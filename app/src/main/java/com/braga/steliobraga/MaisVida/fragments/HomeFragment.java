@@ -46,10 +46,14 @@ public class HomeFragment extends Fragment {
     MaterialButton btn_anunciar;
     MaterialButton btn_goback;
     MaterialButton  btn_anuncio;
+    String[] list;
 
 
+
+//pesquisa
+/*
     SearchView searchView;
-    searchView = findViewById(R.id.psq);
+    searchView =view.findViewById(R.id.psq);
     SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
 
         if (searchManager != null)
@@ -57,6 +61,7 @@ public class HomeFragment extends Fragment {
     {
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
     }
+*/
 
 
 
@@ -75,6 +80,35 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+list = new String[]{"agua","mar"};
+        //pesquisa
+        SearchView searchView;
+        searchView =view.findViewById(R.id.psq);
+        searchView.cancelLongPress();
+
+      /* // searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+           *//* @Override
+            public boolean onQueryTextSubmit(String query) {
+
+
+                try{
+                    postAdapter.getFilter().filter(query);
+                } catch (Exception e) {
+                    Log.v("Search Filter – K: ", e.getMessage());
+                }
+            return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                try{
+                    postAdapter.getFilter().filter(query);
+                } catch (Exception e) {
+                    Log.v("Search Filter – K: ", e.getMessage());
+                }
+                return false;*//*
+            }
+        });*/
 
 
         if (getActivity() != null){
@@ -108,12 +142,12 @@ public class HomeFragment extends Fragment {
 
 
 
-    @OnClick(R.id.btn_anuncio)
+   /* @OnClick(R.id.btn_anuncio)
     public void openActivity(){
         Intent intent = new Intent(getActivity(), AnuncioActivity.class);
         startActivity(intent);
   //    Toast.makeText(getContext(), "Clicked", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
     public MaterialButton getBtn_anunciar() {
         btn_anuncio.setOnClickListener(new View.OnClickListener() {

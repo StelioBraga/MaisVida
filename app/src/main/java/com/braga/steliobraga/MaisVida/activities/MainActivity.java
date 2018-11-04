@@ -1,5 +1,6 @@
 package com.braga.steliobraga.MaisVida.activities;
 
+import android.app.NotificationManager;
 import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
@@ -8,6 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.design.button.MaterialButton;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +23,8 @@ import com.braga.steliobraga.MaisVida.fragments.ContaFragment;
 import com.braga.steliobraga.MaisVida.R;
 import com.braga.steliobraga.MaisVida.fragments.HomeFragment;
 import com.braga.steliobraga.MaisVida.utils.MyUtils;
+
+import butterknife.OnClick;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,12 +40,14 @@ public class MainActivity extends AppCompatActivity {
     MaterialButton btn_anuncio;
 
 
+
+
     final Context ctx = this;
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        //   return super.onCreateOptionsMenu(menu);
-//        getMenuInflater().inflate(R.menu.search_navegation, menu);
+//        getMenuInflater().inflate(R.menu.estados_navigation, menu);
 //        MenuItem searchItem = menu.findItem(R.id.pesquisar);
 //        SearchView searchView = (SearchView)
 //                MenuItemCompat.getActionView(searchItem);
@@ -97,18 +103,16 @@ public class MainActivity extends AppCompatActivity {
         contaFragment = new ContaFragment();
 
 
-        btn_anuncio.setOnClickListener(new View.OnClickListener() {
+     /*   btn_anuncio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getBaseContext(), AnuncioActivity.class));
+             //   Intent intent = new Intent(MainActivity.this, AnuncioActivity.class);
 
 
             }
 
+        });*/
 
-
-
-        });
 
 
         // Select by default:
@@ -132,11 +136,18 @@ public class MainActivity extends AppCompatActivity {
                    case R.id.profile_item:
                         MyUtils.changeFragment(fl_framelayout, contaFragment, fragmentManager);
                         break;
+
                 }
                 return true;
             }
         });
 
     }
+
+    /*NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this,)
+            .setSmallIcon(R.drawable.ic_celular)
+            .setContentTitle(chatFragment)
+            .setContentText(chatFragment)
+            .setPriority(NotificationCompat.PRIORITY_DEFAULT);*/
 
 }
